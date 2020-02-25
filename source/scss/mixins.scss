@@ -1,0 +1,22 @@
+@mixin font-main {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-secondary {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin button {
+  @include font-secondary;
+
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

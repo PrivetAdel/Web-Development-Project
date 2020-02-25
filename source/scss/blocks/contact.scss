@@ -1,0 +1,190 @@
+.section-contact {
+  padding: 100px 0;
+  text-align: center;
+  background-color: $color-grey;
+  background-image: url('../img/bg-footer.jpg');
+  background-repeat: no-repeat;
+  background-position: 60% 100%;
+  background-size: cover;
+  position: relative;
+
+  .section-inner {
+    padding: 25px 0;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    color: $color-white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 33, 33, .8);
+    z-index: 5;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 80px;
+    width: 80%;
+
+    a {
+      color: $color-white;
+    }
+  }
+
+  &__wrap {
+    flex-basis: 30%;
+    margin: 0 1%;
+
+    svg {
+      background: $color-gradient;
+      border-radius: 50%;
+      width: 105px;
+      height: 105px;
+      padding: 25px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15%;
+  }
+
+  &__input {
+    display: flex;
+    width: 100%;
+
+    input {
+      @include font-main;
+
+      border: none;
+      color: $color-grey;
+      background-color: $color-white;
+      border-radius: 10px;
+      padding: 35px 20px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+
+    input + input {
+      margin-left: 15px;
+    }
+  }
+
+  &__textarea {
+    margin: 15px 0 0;
+  }
+
+  textarea {
+    @include font-main;
+
+    border: none;
+    color: $color-grey;
+    background-color: $color-white;
+    border-radius: 10px;
+    padding: 35px 20px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  &__button {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+
+    button {
+      @include button;
+
+      border: none;
+      border-radius: 10px;
+      background-color: $color-white;
+      color: $color-grey;
+      padding: 30px 80px;
+      margin: 0 0 0 auto;
+
+      &:hover {
+        background-color: $color-emerald;
+        color: $color-white;
+      }
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    padding: 75px 0;
+
+    &__form {
+      padding: 0 5%;
+    }
+
+    &__input {
+      input {
+        padding: 25px 15px;
+      }
+    }
+
+    &__wrap {
+      svg {
+        width: 95px;
+        height: 95px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__contacts {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 55px 0;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 25px 0;
+
+    &__input {
+      flex-direction: column;
+
+      input + input {
+        margin: 15px 0 0;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    &__contacts {
+      margin: 0 auto 50px;
+    }
+
+    &__wrap {
+      flex-basis: 100%;
+      margin: 0 0 30px;
+    }
+
+    &__button {
+      button {
+        width: 100%;
+        padding: 25px 80px;
+      }
+    }
+  }
+}

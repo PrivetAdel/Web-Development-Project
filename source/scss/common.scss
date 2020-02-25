@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include font-main;
+
+  color: $color-grey;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.section-outer {
+  @media (min-width: $screen-xl) {
+    padding: 0 20px;
+  }
+}
+
+.section-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.text {
+  width: 50%;
+  margin: 40px auto 70px;
+  font-size: 15px;
+  line-height: 22px;
+
+  @media (max-width: $screen-xl) {
+    width: 60%;
+  }
+
+  @media (max-width: $screen-ld) {
+    width: 75%;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 90%;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 80%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey;
+}

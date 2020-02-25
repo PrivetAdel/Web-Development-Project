@@ -1,0 +1,198 @@
+.section-pricing {
+  padding: 100px 0;
+  text-align: center;
+  background-color: $color-lite-emerald;
+
+  .section-inner {
+    padding: 25px 0;
+  }
+
+  @media (max-width: $screen-ld) {
+    padding: 75px 0;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 55px 0;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 25px 0;
+  }
+}
+
+.tariffs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__controls {
+    display: none;
+  }
+
+  &__card {
+    background-color: $color-white;
+    width: 30%;
+    margin: 1%;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+
+      .tariffs__button {
+        background-color: $color-emerald;
+        color: $color-white;
+        border: 2px solid $color-emerald;
+      }
+    }
+  }
+
+  &__header {
+    color: $color-white;
+    clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+    background: $color-gradient;
+    height: auto;
+    width: 100%;
+    padding: 2% 0;
+  }
+
+  &__name {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  &__cost {
+    font-size: 50px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 30px 0 70px;
+
+    sub {
+      font-size: 17px;
+    }
+
+    sup {
+      font-size: 25px;
+    }
+  }
+
+  &__options {
+    padding: 0 30%;
+  }
+
+  &__option {
+    font-size: 15px;
+    line-height: 22px;
+    border-bottom: 1px solid $color-lite-grey;
+    padding-bottom: 15px;
+    margin: 25px 0;
+  }
+
+  &__button {
+    @include button;
+
+    border: 2px solid $color-grey;
+    background-color: transparent;
+    padding: 20px 25px;
+    margin: 20px 0 60px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    &__card {
+      width: 31%;
+    }
+
+    &__options {
+      padding: 0 25%;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__options {
+      padding: 0 20%;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    &__button {
+      padding: 13px 17px;
+      margin: 20px 0 40px;
+    }
+}
+
+  @media (max-width: $screen-xs-max) {
+    position: relative;
+    min-height: 680px;
+
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+    }
+
+
+    &__button {
+      padding: 20px 25px;
+      margin: 20px 0 60px;
+    }
+
+    &__card {
+      width: 86%;
+      position: absolute;
+      left: 7%;
+      top: 0px;
+      margin: 0;
+      opacity: 0;
+      z-index: 1;
+      transition: .5s;
+
+      &--showing {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+
+    &--nojs {
+      flex-direction: column;
+
+      .tariffs__card {
+        opacity: 1;
+        position: relative;
+      }
+
+      .tariffs__controls {
+        display: none;
+      }
+
+      .tariffs__card + .tariffs__card {
+        margin-top: 30px;
+      }
+    }
+
+    .next,
+    .previous {
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

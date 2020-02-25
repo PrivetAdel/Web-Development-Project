@@ -1,0 +1,148 @@
+.section-team {
+  padding: 100px 0;
+  text-align: center;
+
+  .section-inner {
+    padding: 25px 0;
+  }
+
+  @media (max-width: $screen-ld) {
+    padding: 75px 0;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 55px 0;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 25px 0;
+  }
+}
+
+.members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__card {
+    width: 32%;
+  }
+
+  &__pic {
+    width: 100%;
+    border-radius: 3%;
+    object-fit: cover;
+    background-color: $color-grey;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 20px 0 0;
+  }
+
+  &__position {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__social-link {
+    background-color: $color-lite-grey;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 8px;
+    transition: 0.3s;
+
+    use.social-icon {
+      fill: $color-emerald;
+    }
+
+    &:hover {
+      background: $color-gradient;
+
+      use.social-icon {
+        fill: $color-white;
+      }
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    &__pic {
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    &__pic {
+      max-width: 230px;
+      max-height: 200px;
+    }
+
+    &__social-link {
+      max-width: 45px;
+      max-height: 45px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__social-link {
+      max-width: 40px;
+      max-height: 40px;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    &__social-link {
+      max-width: 35px;
+      max-height: 35px;
+      padding: 2px;
+      margin: 5px;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    &__social-link {
+      max-width: 45px;
+      max-height: 45px;
+      padding: 8px;
+      margin: 10px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .members {
+      flex-direction: column;
+
+      &__card {
+        width: 100%;
+      }
+
+      &__card + .members__card {
+        margin-top: 50px;
+      }
+
+      &__social-link {
+        max-width: 45px;
+        max-height: 45px;
+        padding: 8px;
+      }
+    }
+  }
+}

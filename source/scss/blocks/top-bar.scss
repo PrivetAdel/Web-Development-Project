@@ -1,0 +1,263 @@
+.section-top-bar {
+  background-color: $color-white;
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+
+
+  .section-inner {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  &__logo {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    margin-left: auto;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    justify-content: flex-end;
+  }
+
+  &__nav--toggle {
+    display: none;
+  }
+
+  &__nav--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+    transition: 0.3s;
+
+    .site-list__item + .site-list__item {
+      margin: 10px 0 10px 40px;
+
+      a:hover {
+        color: $color-emerald;
+      }
+    }
+  }
+
+  &__nav--search {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .site-list__item {
+    &--active {
+      a {
+        color: $color-emerald;
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    .section-inner {
+      padding: 0 10px;
+    }
+
+    &__logo {
+      font-size: 22px;
+    }
+
+    &__nav--list {
+      margin: 10px;
+    }
+
+    &__nav {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .site-list__item + .site-list__item {
+      margin: 10px 0 10px 15px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    .section-inner {
+      padding: 0 5px;
+    }
+
+    &__logo {
+      font-size: 18px;
+      margin: 0 15px;
+    }
+
+    &__nav--list {
+      margin: 0;
+    }
+
+    &__nav {
+      font-size: 15px;
+    }
+
+    .site-list__item + .site-list__item {
+      margin: 10px 0 10px 12px;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    .section-inner {
+      padding: 0 5px;
+    }
+
+    &__logo {
+      font-size: 16px;
+      margin: 0 13px;
+    }
+
+    &__nav {
+      font-size: 15px;
+    }
+
+    .site-list__item {
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .site-list__item + .site-list__item {
+      margin: 10px 0 10px 10px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    position: relative;
+
+    .section-inner {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin: 10px auto;
+      font-size: 22px;
+      line-height: 30px;
+
+      p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__navigation {
+      margin: 0 auto;
+    }
+
+    &__nav {
+      flex-direction: column;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__nav--list {
+      flex-direction: column;
+    }
+
+    .site-list__item + .site-list__item {
+      margin: 20px 0 0;
+    }
+
+    &__nav--toggle {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 2;
+      display: block;
+      width: 60px;
+      height: 54px;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      background-color: $color-white;
+    }
+
+    &__nav--closed .section-top-bar__nav--toggle::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 17px;
+      width: 24px;
+      height: 4px;
+      background-color: $color-grey;
+      box-shadow: 0 8px 0 0 $color-grey, 0 16px 0 0 $color-grey;
+    }
+
+    &__nav--opened {
+      margin-bottom: 20px;
+    }
+
+    &__nav--opened .section-top-bar__nav--toggle {
+      background-color: transparent;
+      top: 18px;
+      right: 18px;
+      left: auto;
+      z-index: 2;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 26px;
+        left: 16px;
+        width: 26px;
+        height: 4px;
+        background-color: $color-grey;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &__nav--closed .site-list__item {
+      display: none;
+    }
+
+    &__nav--nojs .site-list__item {
+      display: block;
+    }
+
+    &__nav--nojs .section-top-bar__nav--toggle {
+      display: none;
+    }
+  }
+}

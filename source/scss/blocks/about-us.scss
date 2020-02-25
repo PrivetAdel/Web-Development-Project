@@ -1,0 +1,71 @@
+.section-aboutUs {
+  padding: 100px 0;
+
+  .section-inner {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .advantages {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .advantage-1,
+  .advantage-2,
+  .advantage-3 {
+    width: 30%;
+  }
+
+  .advantage__title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  .advantage__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $screen-ld) {
+    padding: 75px 0;
+  }
+
+
+  @media (max-width: $screen-sm-max) {
+    padding: 55px 0;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 25px 0;
+
+    .advantages {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    &__text {
+      width: 100%;
+    }
+
+    .section-inner {
+      padding: 15px;
+    }
+
+    .advantages {
+      flex-direction: column;
+    }
+
+    .advantage-1,
+    .advantage-2,
+    .advantage-3 {
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+}

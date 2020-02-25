@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <script async src=js/picturefill.js></script>
+</head>
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <!-- header -->
+  <header>
+    <section class="section-outer section-top-bar">
+      <div class="section-inner">
+        <div class="section-top-bar__logo">
+          <p>Your Logo</p>
+        </div>
+        <div class="section-top-bar__navigation">
+          <nav class="section-top-bar__nav section-top-bar__nav--opened section-top-bar__nav--nojs">
+            <button class="section-top-bar__nav--toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+            <ul class="section-top-bar__nav--list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Home</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#aboutUs">About</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#services">Servicing</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#blog">Blog</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#contact">Contact us</a>
+              </li>
+              <li class="site-list__item">
+                <button class="section-top-bar__nav--search btn__warning" type="button">
+                  <span class="visually-hidden">Search</span>
+                  <svg width="17" height="17"><use xlink:href="#icon-search"></use></svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section-outer section-header">
+      <div class="section-inner">
+        <div class="section-header__promo">
+          <h1  class="section-header__title">Web development project</h1>
+          <p  class="section-header__subtitle">Very suitable to support all web development projects</p>
+          <button class="section-header__button btn__warning" type="button">OUR SERVICES</button>
+          <button class="section-header__button btn__warning" type="button">HIRE IS NOW</button>
+          <div class="section-header__down-bar">
+            <svg width="30" height="30"><use xlink:href="#icon-down-bar"></use></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- /header -->
+  <main>
+    <div class="section-inner">
+      <div class="back-to-top"></div>
+    </div>
+    <!-- about us -->
+    <section class="section-outer section-aboutUs">
+      <div class="section-inner" id="aboutUs">
+        <h2 class="section-aboutUs__title title" tabindex="0">About Us</h2>
+        <p class="section-aboutUs__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="advantages">
+          <div class="advantage-1">
+            <object data="img/advantages-icon-awesome.svg" width="60" height="60"></object>
+            <h3 class="advantage__title">Awesome Icons</h3>
+            <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+          </div>
+          <div class="advantage-2">
+            <object data="img/advantages-icon-one-page.svg" width="60" height="60"></object>
+            <h3 class="advantage__title">One Page</h3>
+            <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+          </div>
+          <div class="advantage-3">
+            <object data="img/advantages-icon-fully-responsive.svg" width="60" height="60"></object>
+            <h3 class="advantage__title">Fully Responsive</h3>
+            <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /about us -->
+    <!-- services -->
+    <section class="section-outer section-services">
+      <div class="section-inner" id="services">
+        <h2 class="section-services__title title" tabindex="0">Our Services</h2>
+        <p class="section-services__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-services__cards section-services__cards--nojs">
+          <div class="section-services__controls">
+            <div class="previous">
+              <svg width="50" height="50"><use xlink:href="#icon-right"></use></svg>
+            </div>
+            <div class="next">
+              <svg width="50" height="50"><use xlink:href="#icon-left"></use></svg>
+            </div>
+          </div>
+          <ul>
+            <li class="services-card services-card--showing">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Research</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+            <li class="services-card">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Portfolio</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+            <li class="services-card">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Support</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+            <li class="services-card">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Documentation</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+            <li class="services-card">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Development</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+            <li class="services-card">
+              <svg width="60" height="60"><use class="icon-services" xlink:href="#icon-services"></use></svg>
+              <h3 class="services-card__title">Design</h3>
+              <p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <button type="button" name="button" class="services-card__button btn__warning" tabindex="0">Read more</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /services -->
+    <!-- portfolio -->
+    <section class="section-outer section-portfolio">
+      <div class="section-inner" id="portfolio">
+        <h2 class="section-portfolio__title title" tabindex="0">Latest Works</h2>
+        <p class="section-portfolio__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-portfolio__filters">
+          <div class="section-portfolio__filter">
+            <input id="radio-1" type="radio" name="filters" value="all" checked>
+    	      <label for="radio-1" tabindex="0">All</label>
+          </div>
+          <div class="section-portfolio__filter">
+            <input id="radio-2" type="radio" name="filters" value="web design">
+    	      <label for="radio-2" tabindex="0">Web design</label>
+          </div>
+          <div class="section-portfolio__filter">
+            <input id="radio-3" type="radio" name="filters" value="ui/ux design">
+    	      <label for="radio-3" tabindex="0">UI/UX design</label>
+          </div>
+          <div class="section-portfolio__filter">
+            <input id="radio-4" type="radio" name="filters" value="mockups">
+    	      <label for="radio-4" tabindex="0">Mockups</label>
+          </div>
+        </div>
+        <div class="section-portfolio__galery">
+          <div class="section-portfolio__wrap">
+            <p class="section-portfolio__pic-title">Hand Watch</p>
+            <p class="section-portfolio__pic-text">ui/ux design</p>
+            <picture>
+              <source type="image/webp" srcset="img/portfolio-pic1.webp">
+              <img src="img/portfolio-pic1.png" alt="Hand watch" width="370" height="370" class="section-portfolio__pic">
+            </picture>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-pic2.webp">
+            <img src="img/portfolio-pic2.png" alt="Package design" width="370" height="370">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-pic3.webp">
+            <img src="img/portfolio-pic3.png" alt="Package design" width="370" height="370">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-pic4.webp">
+            <img src="img/portfolio-pic4.png" alt="Package design" width="370" height="370">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-pic5.webp">
+            <img src="img/portfolio-pic5.png" alt="Package design" width="370" height="370">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-pic6.webp">
+            <img src="img/portfolio-pic6.png" alt="Package design" width="370" height="370">
+          </picture>
+        </div>
+        <button type="button" name="button" class="section-portfolio__button btn__warning">View all</button>
+      </div>
+    </section>
+    <!-- /portfolio -->
+    <!-- pricing -->
+    <section class="section-outer section-pricing">
+      <div class="section-inner">
+        <h2 class="section-pricing__title title" tabindex="0">Pricing Plan</h2>
+        <p class="section-pricing__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-pricing__tariffs tariffs tariffs--nojs">
+          <div class="tariffs__controls">
+            <div class="previous">
+              <svg width="50" height="50"><use xlink:href="#icon-right"></use></svg>
+            </div>
+            <div class="next">
+              <svg width="50" height="50"><use xlink:href="#icon-left"></use></svg>
+            </div>
+          </div>
+          <div class="tariffs__card">
+            <div class="tariffs__header">
+              <h3 class="tariffs__name">Free-Trail</h3>
+              <p class="tariffs__cost"><sup>$</sup>00<sub>per month</sub></p>
+            </div>
+            <div class="tariffs__options">
+              <p class="tariffs__option">30 Free Trail</p>
+              <p class="tariffs__option">5 Free Projects</p>
+              <p class="tariffs__option">PHP 5 Enabled</p>
+              <p class="tariffs__option">24/7 Suports</p>
+            </div>
+            <button type="button" name="button" class="tariffs__button btn__warning">ORDER NOW</button>
+          </div>
+          <div class="tariffs__card tariffs__card--showing">
+            <div class="tariffs__header">
+              <h3 class="tariffs__name">Basic</h3>
+              <p class="tariffs__cost"><sup>$</sup>50<sub>per month</sub></p>
+            </div>
+            <div class="tariffs__options">
+              <p class="tariffs__option">30 Free Trail</p>
+              <p class="tariffs__option">5 Free Projects</p>
+              <p class="tariffs__option">PHP 5 Enabled</p>
+              <p class="tariffs__option">24/7 Suports</p>
+            </div>
+            <button type="button" name="button" class="tariffs__button btn__warning">ORDER NOW</button>
+          </div>
+          <div class="tariffs__card">
+            <div class="tariffs__header">
+              <h3 class="tariffs__name">Ultimates</h3>
+              <p class="tariffs__cost"><sup>$</sup>99<sub>per month</sub></p>
+            </div>
+            <div class="tariffs__options">
+              <p class="tariffs__option">30 Free Trail</p>
+              <p class="tariffs__option">5 Free Projects</p>
+              <p class="tariffs__option">PHP 5 Enabled</p>
+              <p class="tariffs__option">24/7 Suports</p>
+            </div>
+            <button type="button" name="button" class="tariffs__button btn__warning">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /pricing -->
+    <!-- team -->
+    <section class="section-outer section-team">
+      <div class="section-inner">
+        <h2 class="section-team__title title" tabindex="0">Our Team Member</h2>
+        <p class="section-team__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-team__members members">
+          <div class="members__card">
+            <picture>
+              <source type="image/webp" srcset="img/members-pic1.webp">
+              <img class="members__pic" src="img/members-pic1.jpg" alt="Member-pic" width="370" height="320">
+            </picture>
+            <p class="members__name">John Doe</p>
+            <p class="members__position">General Manager</p>
+            <div class="members__social">
+              <a class="members__social-link members__social-link--facebook" href="https://en-gb.facebook.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-facebook"></use></svg>
+                <span class="visually-hidden">facebook</span>
+              </a>
+              <a class="members__social-link members__social-link--twitter" href="https://twitter.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-twitter"></use></svg>
+                <span class="visually-hidden">twitter</span>
+              </a>
+              <a class="members__social-link members__social-link--instagram" href="https://www.instagram.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-instagram"></use></svg>
+                <span class="visually-hidden">instagram</span>
+              </a>
+              <a class="members__social-link members__social-link--dribbble" href="https://dribbble.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-dribbble"></use></svg>
+                <span class="visually-hidden">dribbble</span>
+              </a>
+            </div>
+          </div>
+          <div class="members__card">
+            <picture>
+              <source type="image/webp" srcset="img/members-pic2.webp">
+              <img class="members__pic" src="img/members-pic2.jpg" alt="Member-pic" width="370" height="320">
+            </picture>
+            <p class="members__name">Alexa Biru</p>
+            <p class="members__position">Office Director</p>
+            <div class="members__social">
+              <a class="members__social-link members__social-link--facebook" href="https://en-gb.facebook.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-facebook"></use></svg>
+                <span class="visually-hidden">facebook</span>
+              </a>
+              <a class="members__social-link members__social-link--twitter" href="https://twitter.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-twitter"></use></svg>
+                <span class="visually-hidden">twitter</span>
+              </a>
+              <a class="members__social-link members__social-link--instagram" href="https://www.instagram.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-instagram"></use></svg>
+                <span class="visually-hidden">instagram</span>
+              </a>
+              <a class="members__social-link members__social-link--dribbble" href="https://dribbble.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-dribbble"></use></svg>
+                <span class="visually-hidden">dribbble</span>
+              </a>
+            </div>
+          </div>
+          <div class="members__card">
+            <picture>
+              <source type="image/webp" srcset="img/members-pic3.webp">
+              <img class="members__pic" src="img/members-pic3.jpg" alt="Member-pic" width="370" height="320">
+            </picture>
+            <p class="members__name">Ronobir Sing</p>
+            <p class="members__position">Admin</p>
+            <div class="members__social">
+              <a class="members__social-link members__social-link--facebook" href="https://en-gb.facebook.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-facebook"></use></svg>
+                <span class="visually-hidden">facebook</span>
+              </a>
+              <a class="members__social-link members__social-link--twitter" href="https://twitter.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-twitter"></use></svg>
+                <span class="visually-hidden">twitter</span>
+              </a>
+              <a class="members__social-link members__social-link--instagram" href="https://www.instagram.com" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-instagram"></use></svg>
+                <span class="visually-hidden">instagram</span>
+              </a>
+              <a class="members__social-link members__social-link--dribbble" href="https://dribbble.com/" target="_blank">
+                <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-dribbble"></use></svg>
+                <span class="visually-hidden">dribbble</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /team -->
+    <!-- blog -->
+    <section class="section-outer section-blog">
+      <div class="section-inner" id="blog">
+        <h2 class="section-blog__title title" tabindex="0">Blog</h2>
+        <p class="section-blog__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-blog__cards cards">
+          <div class="cards__card">
+            <picture>
+              <source type="image/webp" srcset="img/blog-pic-1.webp">
+              <img class="cards__pic" src="img/blog-pic-1.jpg" width="320" height="260" alt="Seo">
+            </picture>
+            <div class="cards__content">
+              <h3 class="cards__title btn__warning"><a href="#">SEO Quis Vestibulum</a></h3>
+              <div class="cards__date">
+                <svg width="20" height="20"><use xlink:href="#icon-date"></use></svg>
+                <span>11.02.2020</span>
+              </div>
+              <div class="cards__section">
+                <svg width="20" height="20"><use xlink:href="#icon-development"></use></svg>
+                <span>Development</span>
+              </div>
+              <p class="cards__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+            </div>
+          </div>
+          <div class="cards__card">
+            <picture>
+              <source type="image/webp" srcset="img/blog-pic-2.webp">
+              <img class="cards__pic" src="img/blog-pic-2.jpg" width="320" height="260" alt="Workplace">
+            </picture>
+            <div class="cards__content">
+              <h3 class="cards__title btn__warning"><a href="#">SEO Quis Vestibulum</a></h3>
+              <div class="cards__date">
+                <svg width="20" height="20"><use xlink:href="#icon-date"></use></svg>
+                <span>11.02.2020</span>
+              </div>
+              <div class="cards__section">
+                <svg width="20" height="20"><use xlink:href="#icon-development"></use></svg>
+                <span>Development</span>
+              </div>
+              <p class="cards__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+            </div>
+          </div>
+          <div class="cards__card">
+            <picture>
+              <source type="image/webp" srcset="img/blog-pic-3.webp">
+              <img class="cards__pic" src="img/blog-pic-3.jpg" width="320" height="260" alt="Workplace">
+            </picture>
+            <div class="cards__content">
+              <h3 class="cards__title btn__warning"><a href="#">SEO Quis Vestibulum</a></h3>
+              <div class="cards__date">
+                <svg width="20" height="20"><use xlink:href="#icon-date"></use></svg>
+                <span>11.02.2020</span>
+              </div>
+              <div class="cards__section">
+                <svg width="20" height="20"><use xlink:href="#icon-development"></use></svg>
+                <span>Development</span>
+              </div>
+              <p class="cards__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /blog -->
+    <!-- contact -->
+    <section class="section-outer section-contact">
+      <div class="section-inner" id="contact">
+        <h2 class="section-contact__title title" tabindex="0">Contact Us</h2>
+        <p class="section-contact__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-contact__contacts">
+          <div class="section-contact__wrap">
+            <svg width="65" height="65"><use xlink:href="#icon-address"></use></svg>
+            <p class="section-contact__address">Nobinagar savar,</br>Dhaka Bangladesh</p>
+          </div>
+          <div class="section-contact__wrap">
+            <svg width="65" height="65"><use xlink:href="#icon-phone"></use></svg>
+            <p class="section-contact__phone">
+              <a href="tel:+8801743331996">+8801743331996</a></br>
+              <a href="tel:+8801928737807">+8801928737807</a>
+            </p>
+          </div>
+          <div class="section-contact__wrap">
+            <svg width="65" height="65"><use xlink:href="#icon-mail"></use></svg>
+            <p class="section-contact__mail">
+              <a href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a></br>
+              <a href="mailto:quickmasud@yahoo.com">quickmasud@yahoo.com</a>
+            </p>
+          </div>
+        </div>
+        <form action="index.html" method="post">
+          <div class="section-contact__form">
+            <div class="section-contact__input">
+              <input type="text" name="name" value="" placeholder="Your Name">
+              <input type="text" name="email" value="" placeholder="Your Email">
+            </div>
+            <div class="section-contact__textarea">
+              <textarea name="name" rows="8" cols="80" placeholder="Write Massage"></textarea>
+            </div>
+            <div class="section-contact__button">
+              <button type="submit" name="button">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /contact -->
+  </main>
+  <!-- footer -->
+  <footer class="section-outer footer">
+    <div class="section-inner">
+      <p class="footer__copyright">All rights Reserved © 2020</p>
+    </div>
+  </footer>
+  <!-- /footer -->
+  <div class="pop-up">
+    <div class="pop-up__overlay">
+      <div class="pop-up__content">
+        <h2 class="title">Ooooooops!</h2>
+        <p class="text">It's doesn't work now</p>
+        <button class="pop-up__button" type="button" name="button">Ok</button>
+      </div>
+    </div>
+  </div>
+  <script async="" src="js/menu.js"></script>
+  <script async="" src="js/back-to-top.js"></script>
+  <script async="" src="js/pop-up.js"></script>
+  <script async="" src="js/section-services-slider.js"></script>
+  <script async="" src="js/section-pricing-slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+.section-portfolio {
+  padding: 100px 0;
+  text-align: center;
+
+  .section-inner {
+    padding: 25px 0;
+  }
+
+  &__filter {
+    label {
+      @include button;
+
+      background-color: transparent;
+      border: 2px solid $color-emerald;
+      padding: 20px 30px;
+      margin: 50px 10px 0;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $color-emerald;
+        border: 2px solid $color-emerald;
+        color: $color-white;
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + label {
+      background-color: $color-emerald;
+      border: 2px solid $color-emerald;
+      color: $color-white;
+    }
+  }
+
+  &__button {
+    @include button;
+
+    background-color: $color-emerald;
+    color: $color-white;
+    border: none;
+    padding: 30px 70px;
+    transition: 0.3s;
+
+    &:hover {
+      background: $color-gradient;
+      border: none;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 0;
+    width: 100%;
+
+    img {
+      background-color: $color-grey;
+      object-fit: cover;
+      margin: 0 10px 30px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  .section-portfolio__pic {
+    object-position: left;
+  }
+
+  &__pic-title {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $color-white;
+  }
+
+  &__pic-text {
+    position: absolute;
+    top: 44%;
+    left: 39%;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $color-white;
+  }
+
+  @media (max-width: $screen-xl) {
+    img {
+      max-width: 370px;
+      max-height: 370px;
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    padding: 75px 0;
+
+    &__filter {
+      label {
+        margin: 50px 7px 0;
+      }
+    }
+
+    img {
+      margin: 0 5px 20px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__filter {
+      label {
+        padding: 18px 15px;
+        margin: 0 7px;
+      }
+    }
+
+    &__galery {
+      margin: 60px 0 20px;
+    }
+
+    img {
+      max-width: 350px;
+      max-height: 350px;
+      margin: 0 5px 20px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    img {
+      max-width: 320px;
+      max-height: 320px;
+      margin: 0 3px 20px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 55px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    &__filters {
+      width: 85%;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__filter {
+      margin: 0 0 20px;
+      width: 100%;
+
+      label {
+        margin: 0;
+        display: block;
+      }
+    }
+
+    &__button {
+      margin: 0 auto;
+      width: 85%;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 25px 0;
+
+    &__filter {
+      label {
+        padding: 18px 15px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    img {
+      width: 100%;
+      max-width: 370px;
+      max-height: 370px;
+    }
+  }
+}

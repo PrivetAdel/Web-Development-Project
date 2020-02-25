@@ -1,0 +1,27 @@
+.back-to-top {
+  background-image: url('../img/icon-up.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  height: 60px;
+  width: 60px;
+  opacity: .5;
+  z-index: 20;
+  display: none;
+
+  @media (max-width: $screen-s) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.back-to-top--show {
+  display: block;
+}
