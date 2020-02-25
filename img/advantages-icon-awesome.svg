@@ -1,0 +1,26 @@
+<svg id="awesome" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+	 <defs>
+ 		<style type="text/css">
+ 			 .awesome-path {
+ 				 stroke-dasharray: 800;
+ 				 stroke-dashoffset: 0;
+ 				 animation: dash 4s linear infinite;
+ 			 }
+
+ 			 @keyframes dash {
+ 				 from { stroke-dashoffset: 800; }
+ 				 to { stroke-dashoffset: 0; }
+ 			 }
+ 		</style>
+ 	</defs>
+<g class="awesome-path" fill="none" stroke="#212121" stroke-width="5" stroke-miterlimit="5">
+	<path d="M141.574,75.039
+		c0,36.727-29.92,66.327-66.646,66.327c-36.727,0-66.354-29.601-66.354-66.327S38.196,8.713,74.923,8.713
+		S141.574,38.313,141.574,75.039z M74.998,8.752L75,141.5L74.998,8.752z M8.5,75h133H8.5z M122.022,27.022C109.988,39.057,93.363,46.5,75,46.5
+		c-18.118,0-34.544-7.246-46.538-18.997 M28.926,122.049
+		C40.877,110.562,57.114,103.5,75,103.5c18.117,0,34.541,7.244,46.535,18.995c0.586,0.575,1.162,1.161,1.728,1.757 M74.923,8.713
+		c23.844,12.558,40.11,37.427,40.11,66.248c0,28.823-16.259,53.849-40.105,66.405c-23.686-12.606-39.813-37.7-39.813-66.405
+		C35.114,46.258,51.239,21.32,74.923,8.713z"/>
+</g>
+</svg>
